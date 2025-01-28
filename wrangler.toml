@@ -11,83 +11,83 @@ enabled = true
 
 
 [[routes]]
-pattern = "kang.cepu.us.kg"
+pattern = "frazier.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "tedjo.cepu.us.kg"
+pattern = "tronic.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.tedjo.cepu.us.kg"
+pattern = "ava.game.naver.com.tronic.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "graph.instagram.com.tedjo.cepu.us.kg"
+pattern = "graph.instagram.com.tronic.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.tedjo.cepu.us.kg"
+pattern = "quiz.int.vidio.com.tronic.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "live.iflix.com.tedjo.cepu.us.kg"
+pattern = "live.iflix.com.tronic.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "support.zoom.us.tedjo.cepu.us.kg"
+pattern = "support.zoom.us.tronic.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.tedjo.cepu.us.kg"
+pattern = "blog.webex.com.tronic.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "investors.spotify.com.tedjo.cepu.us.kg"
+pattern = "investors.spotify.com.tronic.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "cache.netflix.com.tedjo.cepu.us.kg"
+pattern = "cache.netflix.com.tronic.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "zaintest.vuclip.com.tedjo.cepu.us.kg"
+pattern = "zaintest.vuclip.com.tronic.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "ads.ruangguru.com.tedjo.cepu.us.kg"
+pattern = "ads.ruangguru.com.tronic.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "io.ruangguru.com.tedjo.cepu.us.kg"
+pattern = "io.ruangguru.com.tronic.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "api.midtrans.com.tedjo.cepu.us.kg"
+pattern = "api.midtrans.com.tronic.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "wong.ndeso.web.id"
+pattern = "t0p.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.wong.ndeso.web.id"
+pattern = "ava.game.naver.com.t0p.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "graph.instagram.com.wong.ndeso.web.id"
+pattern = "graph.instagram.com.t0p.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.wong.ndeso.web.id"
+pattern = "quiz.int.vidio.com.t0p.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "live.iflix.com.wong.ndeso.web.id"
+pattern = "live.iflix.com.t0p.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "support.zoom.us.wong.ndeso.web.id"
+pattern = "support.zoom.us.t0p.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.wong.ndeso.web.id"
+pattern = "blog.webex.com.wt0p.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "investors.spotify.com.wong.ndeso.web.id"
+pattern = "investors.spotify.com.t0p.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "cache.netflix.com.wong.ndeso.web.id"
+pattern = "cache.netflix.com.t0p.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "zaintest.vuclip.com.wong.ndeso.web.id"
+pattern = "zaintest.vuclip.com.t0p.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "ads.ruangguru.com.wong.ndeso.web.id"
+pattern = "ads.ruangguru.com.t0p.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "io.ruangguru.com.wong.ndeso.web.id"
+pattern = "io.ruangguru.com.t0p.topplug7.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "api.midtrans.com.wong.ndeso.web.id"
+pattern = "api.midtrans.com.t0p.topplug7.us.kg"
 custom_domain = true
