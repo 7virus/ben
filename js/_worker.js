@@ -1,11 +1,13 @@
 var __defProp = Object.defineProperty;
 var __name = (target, value) => __defProp(target, "name", { value, configurable: true });
 
-// cf/_worker.js
+// js/_worker.js
 import { connect } from "cloudflare:sockets";
-var proxyListURL = "https://cf.cepu.us.kg/update_proxyip.txt";
-var namaWeb = "SAEAKER877 NETWORK";
-var linkTele = "https://t.me/seaker877";
+var __defProp2 = Object.defineProperty;
+var __name2 = /* @__PURE__ */ __name((target, value) => __defProp2(target, "name", { value, configurable: true }), "__name");
+var proxyListURL = "https://7to7.topplug7.us.kg/update_proxyip.txt";
+var namaWeb = "TOpG-Bouy NETWORK";
+var linkTele = "https://t.me/Hub7s";
 var wildcards = [
   "ava.game.naver.com",
   "graph.instagram.com",
@@ -21,9 +23,6 @@ var wildcards = [
   "business.blibli.com",
   "api.midtrans.com"
 ];
-
-
-
 var cachedProxyList = [];
 var proxyIP = "";
 var WS_READY_STATE_OPEN = 1;
@@ -50,6 +49,7 @@ async function getProxyList(forceReload = false) {
   return cachedProxyList;
 }
 __name(getProxyList, "getProxyList");
+__name2(getProxyList, "getProxyList");
 async function reverseProxy(request, target) {
   const targetUrl = new URL(request.url);
   targetUrl.hostname = target;
@@ -61,6 +61,7 @@ async function reverseProxy(request, target) {
   return newResponse;
 }
 __name(reverseProxy, "reverseProxy");
+__name2(reverseProxy, "reverseProxy");
 var worker_default = {
   async fetch(request, env, ctx) {
     try {
@@ -77,11 +78,12 @@ var worker_default = {
         console.log("Proxy list updated:", Array.from(proxyState.entries()));
       }
       __name(updateProxies, "updateProxies");
+      __name2(updateProxies, "updateProxies");
       ctx.waitUntil(
-        (/* @__PURE__ */ __name(async function periodicUpdate() {
+        (/* @__PURE__ */ __name2(/* @__PURE__ */ __name(async function periodicUpdate() {
           await updateProxies();
           setInterval(updateProxies, 6e4);
-        }, "periodicUpdate"))()
+        }, "periodicUpdate"), "periodicUpdate"))()
       );
       if (upgradeHeader === "websocket") {
         const pathMatch = url.pathname.match(/^\/([A-Z]{2})(\d+)?$/);
@@ -172,6 +174,7 @@ function groupBy(array, key) {
   }, {});
 }
 __name(groupBy, "groupBy");
+__name2(groupBy, "groupBy");
 async function handleSubRequest(hostnem) {
   const html = `
 <!DOCTYPE html>
@@ -754,9 +757,10 @@ async function handleSubRequest(hostnem) {
   return html;
 }
 __name(handleSubRequest, "handleSubRequest");
+__name2(handleSubRequest, "handleSubRequest");
 async function handleWebRequest(request) {
   const apiUrl = proxyListURL;
-  const fetchConfigs = /* @__PURE__ */ __name(async () => {
+  const fetchConfigs = /* @__PURE__ */ __name2(async () => {
     try {
       const response = await fetch(apiUrl);
       const text = await response.text();
@@ -776,14 +780,14 @@ async function handleWebRequest(request) {
       return [];
     }
   }, "fetchConfigs");
-  const generateUUIDv42 = /* @__PURE__ */ __name(() => {
+  const generateUUIDv42 = /* @__PURE__ */ __name2(() => {
     return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (c) => {
       const r = Math.random() * 16 | 0;
       const v = c === "x" ? r : r & 3 | 8;
       return v.toString(16);
     });
   }, "generateUUIDv4");
-  const getFlagEmoji = /* @__PURE__ */ __name((countryCode) => {
+  const getFlagEmoji = /* @__PURE__ */ __name2((countryCode) => {
     if (!countryCode)
       return "\u{1F3F3}\uFE0F";
     return countryCode.toUpperCase().split("").map((char) => String.fromCodePoint(127462 - 65 + char.charCodeAt(0))).join("");
@@ -880,23 +884,23 @@ async function handleWebRequest(request) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FREE | CF | LIFETIME | USER-KERE</title>
-    <meta name="description" content="FREE | CF | LIFETIME | USER-KERE">
-    <meta name="keywords" content="FREE | CF | LIFETIME | USER-KERE">
-    <meta name="author" content="FREE | CF | LIFETIME | USER-KERE">
-    <meta name="robots" content="FREE | CF | LIFETIME | USER-KERE">
+<title>TOpBOUYZ🪂 | ☁️SkyClouds☁️| 🤿🏂🪂🔫🏂VVIP | ☁️🪂🏂🔫🤿🎮🤺🌊PREMIUM</title>
+    <meta name="description" content="TOpBOUYZ🪂 | ☁️SkyClouds☁️| 🤿🏂🪂🔫🏂VVIP | ☁️🪂🏂🔫🤿🎮🤺🌊PREMIUM">
+    <meta name="keywords" content="TOpBOUYZ🪂 | ☁️SkyClouds☁️| 🤿🏂🪂🔫🏂VVIP | ☁️🪂🏂🔫🤿🎮🤺🌊PREMIUM">
+    <meta name="author" content="TOpBOUYZ🪂 | ☁️SkyClouds☁️| 🤿🏂🪂🔫🏂VVIP | ☁️🪂🏂🔫🤿🎮🤺🌊PREMIUM">
+    <meta name="robots" content="TOpBOUYZ🪂 | ☁️SkyClouds☁️| 🤿🏂🪂🔫🏂VVIP | ☁️🪂🏂🔫🤿🎮🤺🌊PREMIUM">
 
     <!-- Open Graph Meta Tags untuk SEO Media Sosial -->
-    <meta property="og:title" content="FREE | CF | LIFETIME | USER-KERE">
-    <meta property="og:description" content="FREE | CF | LIFETIME | USER-KERE">
+    <meta property="og:title" content="TOpBOUYZ🪂 | ☁️SkyClouds☁️| 🤿🏂🪂🔫🏂VVIP | ☁️🪂🏂🔫🤿🎮🤺🌊PREMIUM">
+    <meta property="og:description" content="TOpBOUYZ🪂 | ☁️SkyClouds☁️| 🤿🏂🪂🔫🏂VVIP | ☁️🪂🏂🔫🤿🎮🤺🌊PREMIUM">
     <meta property="og:image" content="https://png.pngtree.com/background/20231016/original/pngtree-high-definition-3d-wallpaper-in-black-and-red-picture-image_5583707.jpg"> <!-- Ganti dengan URL gambar yang sesuai -->
     <meta property="og:url" content="https://png.pngtree.com/background/20231016/original/pngtree-high-definition-3d-wallpaper-in-black-and-red-picture-image_5583707.jpg">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="FREE | CF | LIFETIME | USER-KERE">
-    <meta name="twitter:description" content="FREE | CF | LIFETIME | USER-KERE">
+    <meta name="twitter:title" content="TOpBOUYZ🪂 | ☁️SkyClouds☁️| 🤿🏂🪂🔫🏂VVIP | ☁️🪂🏂🔫🤿🎮🤺🌊PREMIUM">
+    <meta name="twitter:description" content="TOpBOUYZ🪂 | ☁️SkyClouds☁️| 🤿🏂🪂🔫🏂VVIP | ☁️🪂🏂🔫🤿🎮🤺🌊PREMIUM">
     <meta name="twitter:image" content="https://png.pngtree.com/background/20231016/original/pngtree-high-definition-3d-wallpaper-in-black-and-red-picture-image_5583707.jpg"> <!-- Ganti dengan URL gambar yang sesuai -->
     <link href="https://png.pngtree.com/background/20231016/original/pngtree-high-definition-3d-wallpaper-in-black-and-red-picture-image_5583707.jpg" rel="icon" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -1492,13 +1496,14 @@ async function handleWebRequest(request) {
   `, { headers: { "Content-Type": "text/html" } });
 }
 __name(handleWebRequest, "handleWebRequest");
+__name2(handleWebRequest, "handleWebRequest");
 async function websockerHandler(request) {
   const webSocketPair = new WebSocketPair();
   const [client, webSocket] = Object.values(webSocketPair);
   webSocket.accept();
   let addressLog = "";
   let portLog = "";
-  const log = /* @__PURE__ */ __name((info, event) => {
+  const log = /* @__PURE__ */ __name2((info, event) => {
     console.log(`[${addressLog}:${portLog}] ${info}`, event || "");
   }, "log");
   const earlyDataHeader = request.headers.get("sec-websocket-protocol") || "";
@@ -1576,6 +1581,7 @@ async function websockerHandler(request) {
   });
 }
 __name(websockerHandler, "websockerHandler");
+__name2(websockerHandler, "websockerHandler");
 async function protocolSniffer(buffer) {
   if (buffer.byteLength >= 62) {
     const trojanDelimiter = new Uint8Array(buffer.slice(56, 60));
@@ -1594,6 +1600,7 @@ async function protocolSniffer(buffer) {
   return "Shadowsocks";
 }
 __name(protocolSniffer, "protocolSniffer");
+__name2(protocolSniffer, "protocolSniffer");
 async function handleTCPOutBound(remoteSocket, addressRemote, portRemote, rawClientData, webSocket, responseHeader, log) {
   async function connectAndWrite(address, port) {
     const tcpSocket2 = connect({
@@ -1608,6 +1615,7 @@ async function handleTCPOutBound(remoteSocket, addressRemote, portRemote, rawCli
     return tcpSocket2;
   }
   __name(connectAndWrite, "connectAndWrite");
+  __name2(connectAndWrite, "connectAndWrite");
   async function retry() {
     const tcpSocket2 = await connectAndWrite(
       proxyIP.split(/[:=-]/)[0] || addressRemote,
@@ -1621,10 +1629,12 @@ async function handleTCPOutBound(remoteSocket, addressRemote, portRemote, rawCli
     remoteSocketToWS(tcpSocket2, webSocket, responseHeader, null, log);
   }
   __name(retry, "retry");
+  __name2(retry, "retry");
   const tcpSocket = await connectAndWrite(addressRemote, portRemote);
   remoteSocketToWS(tcpSocket, webSocket, responseHeader, retry, log);
 }
 __name(handleTCPOutBound, "handleTCPOutBound");
+__name2(handleTCPOutBound, "handleTCPOutBound");
 function makeReadableWebSocketStream(webSocketServer, earlyDataHeader, log) {
   let readableStreamCancel = false;
   const stream = new ReadableStream({
@@ -1668,9 +1678,11 @@ function makeReadableWebSocketStream(webSocketServer, earlyDataHeader, log) {
   return stream;
 }
 __name(makeReadableWebSocketStream, "makeReadableWebSocketStream");
+__name2(makeReadableWebSocketStream, "makeReadableWebSocketStream");
 function parseVmessHeader(vmessBuffer) {
 }
 __name(parseVmessHeader, "parseVmessHeader");
+__name2(parseVmessHeader, "parseVmessHeader");
 function parseShadowsocksHeader(ssBuffer) {
   const view = new DataView(ssBuffer);
   const addressType = view.getUint8(0);
@@ -1723,6 +1735,7 @@ function parseShadowsocksHeader(ssBuffer) {
   };
 }
 __name(parseShadowsocksHeader, "parseShadowsocksHeader");
+__name2(parseShadowsocksHeader, "parseShadowsocksHeader");
 function parseVlessHeader(vlessBuffer) {
   const version = new Uint8Array(vlessBuffer.slice(0, 1));
   let isUDP = false;
@@ -1789,6 +1802,7 @@ function parseVlessHeader(vlessBuffer) {
   };
 }
 __name(parseVlessHeader, "parseVlessHeader");
+__name2(parseVlessHeader, "parseVlessHeader");
 function parseTrojanHeader(buffer) {
   const socks5DataBuffer = buffer.slice(58);
   if (socks5DataBuffer.byteLength < 6) {
@@ -1859,6 +1873,7 @@ function parseTrojanHeader(buffer) {
   };
 }
 __name(parseTrojanHeader, "parseTrojanHeader");
+__name2(parseTrojanHeader, "parseTrojanHeader");
 async function remoteSocketToWS(remoteSocket, webSocket, responseHeader, retry, log) {
   let header = responseHeader;
   let hasIncomingData = false;
@@ -1895,6 +1910,7 @@ async function remoteSocketToWS(remoteSocket, webSocket, responseHeader, retry, 
   }
 }
 __name(remoteSocketToWS, "remoteSocketToWS");
+__name2(remoteSocketToWS, "remoteSocketToWS");
 function base64ToArrayBuffer(base64Str) {
   if (!base64Str) {
     return { error: null };
@@ -1909,10 +1925,12 @@ function base64ToArrayBuffer(base64Str) {
   }
 }
 __name(base64ToArrayBuffer, "base64ToArrayBuffer");
+__name2(base64ToArrayBuffer, "base64ToArrayBuffer");
 function arrayBufferToHex(buffer) {
   return [...new Uint8Array(buffer)].map((x) => x.toString(16).padStart(2, "0")).join("");
 }
 __name(arrayBufferToHex, "arrayBufferToHex");
+__name2(arrayBufferToHex, "arrayBufferToHex");
 async function handleUDPOutbound(webSocket, responseHeader, log) {
   let isVlessHeaderSent = false;
   const transformStream = new TransformStream({
@@ -1965,6 +1983,7 @@ async function handleUDPOutbound(webSocket, responseHeader, log) {
   };
 }
 __name(handleUDPOutbound, "handleUDPOutbound");
+__name2(handleUDPOutbound, "handleUDPOutbound");
 function safeCloseWebSocket(socket) {
   try {
     if (socket.readyState === WS_READY_STATE_OPEN || socket.readyState === WS_READY_STATE_CLOSING) {
@@ -1975,7 +1994,8 @@ function safeCloseWebSocket(socket) {
   }
 }
 __name(safeCloseWebSocket, "safeCloseWebSocket");
-var getEmojiFlag = /* @__PURE__ */ __name((countryCode) => {
+__name2(safeCloseWebSocket, "safeCloseWebSocket");
+var getEmojiFlag = /* @__PURE__ */ __name2((countryCode) => {
   if (!countryCode || countryCode.length !== 2)
     return "";
   return String.fromCodePoint(
@@ -2009,7 +2029,7 @@ async function generateClashSub(type, bug, seaker877, tls, country = null, limit
     const proxyHost = parts[0];
     const proxyPort = parts[1] || 443;
     const emojiFlag = getEmojiFlag(line.split(",")[2]);
-    const sanitize = /* @__PURE__ */ __name((text) => text.replace(/[\n\r]+/g, "").trim(), "sanitize");
+    const sanitize = /* @__PURE__ */ __name2((text) => text.replace(/[\n\r]+/g, "").trim(), "sanitize");
     let ispName = sanitize(`${emojiFlag} (${line.split(",")[2]}) ${line.split(",")[3]} ${count++}`);
     const UUIDS = `${generateUUIDv4()}`;
     const ports = tls ? "443" : "80";
@@ -2304,6 +2324,7 @@ rules:
 - MATCH,INTERNET`;
 }
 __name(generateClashSub, "generateClashSub");
+__name2(generateClashSub, "generateClashSub");
 async function generateSurfboardSub(type, bug, seaker877, tls, country = null, limit = null) {
   const proxyListResponse = await fetch(proxyListURL);
   const proxyList = await proxyListResponse.text();
@@ -2331,7 +2352,7 @@ async function generateSurfboardSub(type, bug, seaker877, tls, country = null, l
     const proxyHost = parts[0];
     const proxyPort = parts[1] || 443;
     const emojiFlag = getEmojiFlag(line.split(",")[2]);
-    const sanitize = /* @__PURE__ */ __name((text) => text.replace(/[\n\r]+/g, "").trim(), "sanitize");
+    const sanitize = /* @__PURE__ */ __name2((text) => text.replace(/[\n\r]+/g, "").trim(), "sanitize");
     let ispName = sanitize(`${emojiFlag} (${line.split(",")[2]}) ${line.split(",")[3]} ${count++}`);
     const UUIDS = `${generateUUIDv4()}`;
     if (type === "trojan") {
@@ -2670,6 +2691,7 @@ DOMAIN-SUFFIX,notes-analytics-events.apple.com, AdBlock
 FINAL,Select Group`;
 }
 __name(generateSurfboardSub, "generateSurfboardSub");
+__name2(generateSurfboardSub, "generateSurfboardSub");
 async function generateHusiSub(type, bug, seaker877, tls, country = null, limit = null) {
   const proxyListResponse = await fetch(proxyListURL);
   const proxyList = await proxyListResponse.text();
@@ -2697,7 +2719,7 @@ async function generateHusiSub(type, bug, seaker877, tls, country = null, limit 
     const proxyHost = parts[0];
     const proxyPort = parts[1] || 443;
     const emojiFlag = getEmojiFlag(line.split(",")[2]);
-    const sanitize = /* @__PURE__ */ __name((text) => text.replace(/[\n\r]+/g, "").trim(), "sanitize");
+    const sanitize = /* @__PURE__ */ __name2((text) => text.replace(/[\n\r]+/g, "").trim(), "sanitize");
     let ispName = sanitize(`${emojiFlag} (${line.split(",")[2]}) ${line.split(",")[3]} ${count++}`);
     const UUIDS = `${generateUUIDv4()}`;
     const ports = tls ? "443" : "80";
@@ -3017,6 +3039,7 @@ ${conf}
 }`;
 }
 __name(generateHusiSub, "generateHusiSub");
+__name2(generateHusiSub, "generateHusiSub");
 async function generateSingboxSub(type, bug, seaker877, tls, country = null, limit = null) {
   const proxyListResponse = await fetch(proxyListURL);
   const proxyList = await proxyListResponse.text();
@@ -3044,7 +3067,7 @@ async function generateSingboxSub(type, bug, seaker877, tls, country = null, lim
     const proxyHost = parts[0];
     const proxyPort = parts[1] || 443;
     const emojiFlag = getEmojiFlag(line.split(",")[2]);
-    const sanitize = /* @__PURE__ */ __name((text) => text.replace(/[\n\r]+/g, "").trim(), "sanitize");
+    const sanitize = /* @__PURE__ */ __name2((text) => text.replace(/[\n\r]+/g, "").trim(), "sanitize");
     let ispName = sanitize(`${emojiFlag} (${line.split(",")[2]}) ${line.split(",")[3]} ${count++}`);
     const UUIDS = `${generateUUIDv4()}`;
     const ports = tls ? "443" : "80";
@@ -3317,6 +3340,7 @@ ${conf}
 }`;
 }
 __name(generateSingboxSub, "generateSingboxSub");
+__name2(generateSingboxSub, "generateSingboxSub");
 async function generateNekoboxSub(type, bug, seaker877, tls, country = null, limit = null) {
   const proxyListResponse = await fetch(proxyListURL);
   const proxyList = await proxyListResponse.text();
@@ -3344,7 +3368,7 @@ async function generateNekoboxSub(type, bug, seaker877, tls, country = null, lim
     const proxyHost = parts[0];
     const proxyPort = parts[1] || 443;
     const emojiFlag = getEmojiFlag(line.split(",")[2]);
-    const sanitize = /* @__PURE__ */ __name((text) => text.replace(/[\n\r]+/g, "").trim(), "sanitize");
+    const sanitize = /* @__PURE__ */ __name2((text) => text.replace(/[\n\r]+/g, "").trim(), "sanitize");
     let ispName = sanitize(`${emojiFlag} (${line.split(",")[2]}) ${line.split(",")[3]} ${count++}`);
     const UUIDS = `${generateUUIDv4()}`;
     const ports = tls ? "443" : "80";
@@ -3655,6 +3679,7 @@ ${conf}
 }`;
 }
 __name(generateNekoboxSub, "generateNekoboxSub");
+__name2(generateNekoboxSub, "generateNekoboxSub");
 async function generateV2rayngSub(type, bug, seaker877, tls, country = null, limit = null) {
   const proxyListResponse = await fetch(proxyListURL);
   const proxyList = await proxyListResponse.text();
@@ -3730,6 +3755,7 @@ async function generateV2rayngSub(type, bug, seaker877, tls, country = null, lim
   return base64Conf;
 }
 __name(generateV2rayngSub, "generateV2rayngSub");
+__name2(generateV2rayngSub, "generateV2rayngSub");
 async function generateV2raySub(type, bug, seaker877, tls, country = null, limit = null) {
   const proxyListResponse = await fetch(proxyListURL);
   const proxyList = await proxyListResponse.text();
@@ -3802,6 +3828,7 @@ async function generateV2raySub(type, bug, seaker877, tls, country = null, limit
   return conf;
 }
 __name(generateV2raySub, "generateV2raySub");
+__name2(generateV2raySub, "generateV2raySub");
 function generateUUIDv4() {
   const randomValues = crypto.getRandomValues(new Uint8Array(16));
   randomValues[6] = randomValues[6] & 15 | 64;
@@ -3826,6 +3853,7 @@ function generateUUIDv4() {
   ].join("").replace(/^(.{8})(.{4})(.{4})(.{4})(.{12})$/, "$1-$2-$3-$4-$5");
 }
 __name(generateUUIDv4, "generateUUIDv4");
+__name2(generateUUIDv4, "generateUUIDv4");
 export {
   worker_default as default
 };
