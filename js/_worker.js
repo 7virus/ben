@@ -5,7 +5,7 @@ var __name = (target, value) => __defProp(target, "name", { value, configurable:
 import { connect } from "cloudflare:sockets";
 var __defProp2 = Object.defineProperty;
 var __name2 = /* @__PURE__ */ __name((target, value) => __defProp2(target, "name", { value, configurable: true }), "__name");
-var proxyListURL = "https://7to7.topplug7.us.kg/update_proxyip.txt";
+var proxyListURL = "https://7nett.yopnet.dpdns.org/update_proxyip.txt";
 var namaWeb = "TOpG-Bouy NETWORK";
 var linkTele = "https://t.me/Hub7s";
 var wildcards = [
